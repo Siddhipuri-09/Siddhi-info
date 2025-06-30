@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Siddhi Info | Digital Solutions by Siddhi Kumari</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif; }
+    body { color: #333; }
+    header {
+      background: url('https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg') center/cover no-repeat;
+      color: white; padding: 80px 20px 40px 20px; text-align: center; position: relative;
+    }
+    .logo {
+      position: absolute; top: 20px; left: 20px; width: 80px;
+    }
+    header h1 { font-size: 3.2em; margin-bottom: 10px; text-shadow: 1px 1px 4px rgba(0,0,0,0.5); }
+    header p { font-size: 1.2em; text-shadow: 1px 1px 4px rgba(0,0,0,0.4); }
+    .nav { background-color: #004d40; display: flex; justify-content: center; padding: 15px; }
+    .nav a { color: white; text-decoration: none; margin: 0 20px; font-weight: bold; }
+    .nav a:hover { text-decoration: underline; }
+    .container { max-width: 1000px; margin: auto; padding: 40px 20px; }
+    section { margin-bottom: 60px; }
+    h2 { color: #00796b; margin-bottom: 20px; font-size: 2em; text-align: center; }
+    .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+    .service-card {
+      background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      padding: 30px; text-align: center; transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .service-card:hover { transform: translateY(-5px); box-shadow: 0 6px 20px rgba(0,0,0,0.15); }
+    .service-card img { max-width: 80px; margin-bottom: 20px; }
+    .slider { display: flex; overflow-x: auto; gap: 20px; padding-bottom: 10px; scroll-behavior: smooth; }
+    .slider img { width: 300px; height: 200px; object-fit: cover; border-radius: 10px; }
+    .about-content { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+    .about-content h3 { margin-top: 20px; color: #00796b; font-size: 1.4em; }
+    .about-content ul { list-style: none; margin-top: 10px; }
+    .about-content li { margin: 8px 0; font-size: 1.1em; }
+    form {
+      background: white; padding: 30px; border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-width: 500px; margin: auto;
+    }
+    form input, form textarea {
+      width: 100%; padding: 12px; margin: 12px 0;
+      border: 1px solid #ccc; border-radius: 6px;
+    }
+    form button {
+      background-color: #00796b; color: white; padding: 12px 25px;
+      border: none; border-radius: 6px; cursor: pointer; font-size: 1.1em;
+      transition: background-color 0.3s;
+    }
+    form button:hover { background-color: #005a4f; }
+    .floating-buttons {
+      position: fixed; bottom: 20px; right: 20px; display: flex;
+      flex-direction: column; gap: 12px;
+    }
+    .floating-buttons a {
+      width: 56px; height: 56px; display: flex; align-items: center; justify-content: center;
+      border-radius: 50%; color: white; font-size: 26px; text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .floating-buttons a.whatsapp { background: #25d366; }
+    .floating-buttons a.telegram { background: #0088cc; }
+    .footer {
+      text-align: center; padding: 20px 0;
+      font-size: 0.9em; color: #777; background: #f7f7f7;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png" alt="Logo" class="logo" />
+    <h1>Siddhi Info</h1>
+  </header>
+
+  <nav class="nav">
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="service-grid">
+        <div class="service-card">
+          <img src="https://img.icons8.com/color/96/web-design.png" alt="Web Dev">
+          <h3>Website Development</h3>
+          <p>Modern, responsive websites built to grow your brand.</p>
+        </div>
+        <div class="service-card">
+          <img src="https://img.icons8.com/color/96/engineering.png" alt="Software">
+          <h3>Custom Software</h3>
+          <p>Tailored software solutions to optimize your workflow.</p>
+        </div>
+        <div class="service-card">
+          <img src="https://img.icons8.com/color/96/computer-support.png" alt="IT Consulting">
+          <h3>IT Consulting</h3>
+          <p>Strategic advice for digital transformation and growth.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2>Professional Gallery</h2>
+      <div class="slider">
+        <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg" alt="Project 1">
+        <img src="https://images.pexels.com/photos/574070/pexels-photo-574070.jpeg" alt="Project 2">
+        <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg" alt="Project 3">
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <h3>Skills</h3>
+        <ul>
+          <li>🌐 Web Development (HTML, CSS, JavaScript)</li>
+          <li>⚙️ Java, Python, MySQL</li>
+          <li>🎨 UI/UX Design, Canva</li>
+        </ul>
+        <h3>Experience</h3>
+        <p>Web Development Intern – AndroWebsTech Pvt Ltd</p>
+        <h3>Education</h3>
+        <p>Diploma in Computer Science and Engineering – BKPI Pupri, Sitamarhi (2023–2026)</p>
+        <p>CGPA: 8.38/10</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <input type="tel" placeholder="Phone Number" required />
+        <textarea placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </div>
+
+  <div class="floating-buttons">
+    <a href="https://wa.me/username" class="whatsapp" target="_blank" title="WhatsApp">💬</a>
+    <a href="https://t.me/username" class="telegram" target="_blank" title="Telegram">✈️</a>
+  </div>
+
+  <footer class="footer">
+    © 2025 Siddhi Kumari
+  </footer>
+</body>
+</html>
